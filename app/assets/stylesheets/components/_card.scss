@@ -1,0 +1,32 @@
+.card-category {
+  // background-image: linear-gradient(to right top, #8d011e, #81041e, #75071d, #69091b, #5d0b1a, #540b19, #4c0a17, #430a15, #3b0912, #33080f, #2c060b, #260206);
+  background-color: black;
+  height: 180px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 24px;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+       color: $red;
+     }
+  }
+}
+
+.cards {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
