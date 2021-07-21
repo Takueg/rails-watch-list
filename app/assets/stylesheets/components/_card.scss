@@ -1,6 +1,6 @@
 .card-category {
-  // background-image: linear-gradient(to right top, #8d011e, #81041e, #75071d, #69091b, #5d0b1a, #540b19, #4c0a17, #430a15, #3b0912, #33080f, #2c060b, #260206);
-  background-color: black;
+  background-size: cover;
+  background-position: center;
   height: 180px;
   width: 320px;
   display: flex;
@@ -13,6 +13,8 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-top: 24px;
+  flex-grow: 1;
+  margin: 16px;
 
   a {
     color: white;
@@ -25,8 +27,59 @@
 }
 
 .cards {
-  margin-top: 16px;
+  margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.card-trip {
+  width: 400px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  flex-grow: 1;
+  margin: 16px;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-title {
+  width: 80%;
+
+  p {
+    margin-top: 16px;
+  }
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
 }

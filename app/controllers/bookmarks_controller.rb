@@ -6,6 +6,7 @@ class BookmarksController < ApplicationController
 
   def create
     @bookmark = Bookmark.new(bookmark_params)
+    @bookmark.list_id = params[:list_id]
     if @bookmark.save
       redirect_to list_path(@bookmark.list_id)
     else
