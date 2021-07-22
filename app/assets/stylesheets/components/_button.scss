@@ -50,3 +50,12 @@
   background-color: black;
   color: $red;
 }
+
+.bookmark-delete-button {
+  color: black;
+  font-size: 20px;
+}
+
+.bookmark-delete-button:hover {
+  color: $red;
+}

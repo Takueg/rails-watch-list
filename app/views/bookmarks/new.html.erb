@@ -7,7 +7,7 @@
         <h1 class="text-center mb-3">Add movie to the <strong><%= @list.name %></strong> list</h1>
         <%= simple_form_for [@list, @bookmark] do |f| %>
           <%= f.input :comment, placeholder: 'Add comment', label: false, input_html: { class: 'form-control-lg' } %>
-          <%= f.association :movie, placeholder: 'Choose movie', label: false, input_html: { class: 'form-control-lg' } %>
+          <%= f.association :movie, prompt: 'Choose a movie', label: false, input_html: { class: 'form-control-lg' } %>
           <%= f.submit class: 'btn btn-block btn-lg mt-4 form-button' %>
         <% end %>
       </div>
